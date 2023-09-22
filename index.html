@@ -3,38 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="author" content="Frees Mike" />
+  <meta name="description" content="A FAQ section example for a website" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
   
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link href="./assets/css/development/style-scss-compiled.css" rel="stylesheet" />
+  <script src="./assets/js/index.js"></script>
 </head>
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+  <main>
+    <aside>
+      <img src="./assets/images/illustration-woman-online-desktop.svg" alt="An image of a woman standing before a big computer screen.">
+      <img src="./assets/images/illustration-box-desktop.svg" alt="A orange box with the @ symbol on the top.">
+    </aside>
+    <section>
+      <h1>FAQ</h1>
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+      <details>
+        <summary>How many team members can I invite?</summary>
+        <p>You can invite up to 2 additional users on the Free plan. There is no limit on 
+        team members for the Premium plan.</p>
+      </details>
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
+      <hr />
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
+      <details>
+        <summary>What is the maximum file upload size?</summary>
+        <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>  
+      </details>
 
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+      <hr />
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <details>
+        <summary>How do I reset my password?</summary>
+        <p>Click “Forgot password” from the login page or “Change password” from your profile page.
+        A reset link will be emailed to you.</p>
+      </details>
+
+      <hr />
+
+      <details>
+        <summary>Can I cancel my subscription?</summary>
+        <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+      </details>
+
+      <hr />
+
+      <details>
+        <summary>Do you provide additional support?</summary>
+        <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+      </details>
+
+      <hr />
+    </section>
+  </main>
+
+  <footer>
+    <p class="attribution">Challenge by 
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>.
+      <br>
+      Coded by 
+      <a href="https://www.linkedin.com/in/mike-frees/" target="_blank" rel="noreferrer">Frees Mike</a>.
+    </p>
+  </footer>
 </body>
 </html>
