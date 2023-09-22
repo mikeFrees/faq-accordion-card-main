@@ -56,7 +56,7 @@ My solution:
 
 - how to use npm renamer and copyfiles
 - the beginning of how RegEx works
-- 
+- how to use the deyails and summary tag in HTML
 
 ### Continued development
 

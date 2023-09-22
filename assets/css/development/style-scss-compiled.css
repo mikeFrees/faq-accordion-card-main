@@ -399,9 +399,39 @@ summary,
   cursor: pointer;
 }
 
+@font-face {
+  font-family: "Kumbh Sans";
+  src: local("Kumbh Sans"), url("../../fonts/Kumbh_Sans/KumbhSans-VariableFont_YOPQ,wght.ttf") format("truetype"), url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+}
 body {
-  font: 700 1.4rem/1.7rem Arial, Helvetica, sans-serif;
-  color: #8486a9;
+  font: 400 1rem/1.7rem "Kumbh Sans", sans-serif, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 700 2.4rem/3.2rem;
+  color: #1d1e35;
+}
+
+summary {
+  font-weight: 400;
+  color: #4a4b5e;
+}
+
+summary:hover, details[open] summary:hover {
+  color: #f47c57;
+}
+
+details[open] summary {
+  color: #1d1e35;
+  font-weight: 700;
+}
+
+p {
+  color: #787887;
+}
+
+hr {
+  border: 1px solid #e7e7e9;
 }
 
 footer {
@@ -412,29 +442,62 @@ footer {
   width: 100%;
   min-height: 13rem;
   height: 25%;
-  background: bottom/100% 100% no-repeat url(../../images/pattern-hills.svg), linear-gradient(0deg, #30243a 40%, transparent 100%);
-}
-footer div {
-  margin-top: 10rem;
 }
 footer a {
   margin: 1rem 1.5rem;
-}
-footer a:hover svg path {
-  fill: #fb6087;
 }
 footer p {
   margin-top: auto;
 }
 
 .attribution {
-  font-size: 13px;
+  font-size: 1.3rem;
+  font-weight: 700;
   text-align: center;
+  background-color: #FFF;
+  border-radius: 10px;
+  padding: 2rem;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #f47c57;
   margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(0deg, #6565e7 0%, #6565e7 40%, #af67e9 100%);
+}
+
+main {
+  background-color: #FFF;
+  border-radius: 1rem;
+  width: 92rem;
+  height: 51rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section {
+  width: 35rem;
+}
+
+img {
+  position: relative;
+  right: 10rem;
+  z-index: 1;
+}
+
+img:last-child {
+  position: absolute;
+  z-index: 2;
+  top: 32rem;
+  left: 22rem;
 }
 
 /*# sourceMappingURL=style-scss-compiled.css.map */
