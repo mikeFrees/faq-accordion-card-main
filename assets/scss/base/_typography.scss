@@ -3,6 +3,32 @@
 // -----------------------------------------------------------------------------
 
 body {
-    font: 700 1.4rem/1.7rem $font-stack;
-    color: $color-primary;
+    font: 400 1rem/1.7rem $font-stack;
+}
+
+h1 {
+    font-size: 700 2.4rem/3.2rem;
+    color: $color-text-primary;
+}
+
+summary {
+    font-weight: 400;
+    color: $color-text-secondary;
+}
+
+summary:hover, details[open] summary:hover {
+    color: $color-text-hover;
+}
+
+details[open] summary {
+    color: $color-text-primary;
+    font-weight: 700;
+}
+
+p {
+    color: $color-text-tertiary;
+}
+
+hr {
+    border: 1px solid $color-divider;
 }

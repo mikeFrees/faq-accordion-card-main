@@ -3,18 +3,18 @@
 // -----------------------------------------------------------------------------
 
 //fonts
-$font-stack: Arial, Helvetica, sans-serif;
+$font-stack: "Kumbh Sans", sans-serif, Arial, Helvetica, sans-serif;
 
 //colors
-$color-primary: #8486a9;
-$color-secondary: #fb6087;
+$color-text-primary: #1d1e35;
+$color-text-secondary: #4a4b5e;
+$color-text-tertiary: #787887;
+$color-text-hover: #f47c57;
 
-$color-background-primary: #241e2c;
-$color-background-secondary: #211d2b;
-$color-background-tertiary: #1e1e28;
+$color-background-primary: #6565e7;
+$color-background-secondary: #af67e9;
 
-$color-card-top: #2a2a41;
-$color-card-bottom: #34364f;
+$color-divider:#e7e7e9;
 
 //media queries
 $mobile: 600px;
