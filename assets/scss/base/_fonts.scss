@@ -2,4 +2,10 @@
 // This file contains all @font-face declarations, if any.
 // -----------------------------------------------------------------------------
 
-//@import "../../../node_modules/@fontsource/red-hat-text";
+@font-face {
+    font-family: "Kumbh Sans";
+    src:
+      local("Kumbh Sans"),
+      url("../../fonts/Kumbh_Sans/KumbhSans-VariableFont_YOPQ\,wght.ttf") format("truetype"),
+      url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+  }

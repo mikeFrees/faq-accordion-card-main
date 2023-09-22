@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "sass --watch assets/scss/main.scss assets/css/development/style.css",
+    "watch": "sass --watch assets/scss/main.scss assets/css/development/style-scss-compiled.css",
     "compile": "sass assets/scss/main.scss assets/css/development/style-scss-compiled.css",
     "prefix": "postcss ./assets/css/development/style-scss-compiled.css --use autoprefixer -o ./assets/css/development/style-scss-compiled-prefixed.css",
     "minify": "postcss ./assets/css/development/style-scss-compiled-prefixed.css --use cssnano -o ./assets/css/development/style-scss-compiled-prefixed-minified.css",
