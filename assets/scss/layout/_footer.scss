@@ -7,22 +7,8 @@ footer {
     width: 100%;
     min-height: 13rem;
     height: 25%;
-    background: 
-        bottom / 100% 100% no-repeat url(../../images/pattern-hills.svg),
-        linear-gradient(0deg, #30243a 40%, transparent 100%);
-
-    div {
-        margin-top: 10rem;
-    }
-
     a {
         margin: 1rem 1.5rem;
-    }
-
-    a:hover {
-        svg path {
-            fill: $color-secondary;
-        }
     }
 
     p {
