@@ -49,6 +49,7 @@ My solution:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- Grid
 - javascript
 - scss with 7 - 1 file structure
 
@@ -56,16 +57,12 @@ My solution:
 
 - how to use npm renamer and copyfiles
 - the beginning of how RegEx works
-- how to use the deyails and summary tag in HTML
+- how to use the details and summary tag in HTML
+- styling my scrollbars
 
 ### Continued development
 
-
-
-### Useful resources
-
-- 
-
+I feel like i need to learn how to use gulp or webpack soon to organize my pipeline better instead of using all the npm scripts.
 
 ## Author
 

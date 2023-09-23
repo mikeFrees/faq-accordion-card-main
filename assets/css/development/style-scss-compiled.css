@@ -477,7 +477,7 @@ body {
 
 main {
   background-color: #FFF;
-  border-radius: 1rem;
+  border-radius: 2rem;
   width: 92rem;
   height: 51rem;
   display: flex;
@@ -530,7 +530,6 @@ summary {
 
 summary::after {
   float: right;
-  display: inline-block;
   content: url(../../icons/icon-arrow-down.svg);
   transition: 0.2s;
 }
@@ -581,12 +580,10 @@ details[open] > summary::after {
   h1 {
     text-align: center;
   }
-  /* Works on Firefox */
   * {
     scrollbar-width: thin;
     scrollbar-color: #f47c57 transparent;
   }
-  /* Works on Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
     width: 1rem;
   }
