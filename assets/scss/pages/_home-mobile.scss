@@ -1,0 +1,72 @@
+@media (max-width: $mobile) {
+    img {
+        display: none;
+    }
+
+    body {
+        width: 100vw;
+        height: 300vh;
+        background-size: cover;
+        justify-content: flex-start;
+    }
+
+    main {
+        flex-direction: column;
+        margin-top: 20rem;
+        width: 33rem;
+        height: 53.5rem;
+        background-image: url("../../images/bg-pattern-mobile.svg");
+        background-size: cover;
+    }
+
+    section {
+        width: 80%;
+        margin-top: -15rem;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    aside {
+        position: relative;
+        top: -14.5rem;
+        left: 6rem;
+    }
+
+    details {
+        margin-right: 1rem;
+    }
+
+    aside::before {
+        content: " ";
+        width: 25rem;
+        height: 25rem;
+        background-size: 25rem 25rem;
+        background-image: url("../../images/illustration-woman-online-mobile.svg");
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    /* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: $color-text-hover transparent;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $color-text-hover;
+  border-radius: 2rem;
+  border: 1px solid $color-text-hover;
+}
+
+}

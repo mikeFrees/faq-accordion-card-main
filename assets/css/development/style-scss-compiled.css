@@ -469,6 +469,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-height: 70rem;
+  min-width: 100rem;
   height: 100vh;
   background: linear-gradient(0deg, #6565e7 0%, #6565e7 40%, #af67e9 100%);
 }
@@ -481,23 +483,121 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-image: url("../../images/bg-pattern-desktop.svg");
+  background-size: cover;
+}
+
+h1 {
+  margin-bottom: 3rem;
+  margin-top: 0;
+}
+
+hr {
+  width: 100%;
 }
 
 section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   width: 35rem;
+  height: 80%;
+}
+
+aside {
+  display: grid;
+  margin-left: -12rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
 }
 
 img {
-  position: relative;
-  right: 10rem;
+  grid-area: 1/2/1/2;
   z-index: 1;
+  clip-path: inset(0 0 0 13.5%);
 }
 
 img:last-child {
-  position: absolute;
   z-index: 2;
-  top: 32rem;
-  left: 22rem;
+  position: relative;
+  top: 13.5rem;
+  right: 2.5rem;
+}
+
+summary {
+  display: block;
+}
+
+summary::after {
+  float: right;
+  display: inline-block;
+  content: url(../../icons/icon-arrow-down.svg);
+  transition: 0.2s;
+}
+
+details[open] > summary::after {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 600px) {
+  img {
+    display: none;
+  }
+  body {
+    width: 100vw;
+    height: 300vh;
+    background-size: cover;
+    justify-content: flex-start;
+  }
+  main {
+    flex-direction: column;
+    margin-top: 20rem;
+    width: 33rem;
+    height: 53.5rem;
+    background-image: url("../../images/bg-pattern-mobile.svg");
+    background-size: cover;
+  }
+  section {
+    width: 80%;
+    margin-top: -15rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  aside {
+    position: relative;
+    top: -14.5rem;
+    left: 6rem;
+  }
+  details {
+    margin-right: 1rem;
+  }
+  aside::before {
+    content: " ";
+    width: 25rem;
+    height: 25rem;
+    background-size: 25rem 25rem;
+    background-image: url("../../images/illustration-woman-online-mobile.svg");
+  }
+  h1 {
+    text-align: center;
+  }
+  /* Works on Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #f47c57 transparent;
+  }
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 1rem;
+  }
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: #f47c57;
+    border-radius: 2rem;
+    border: 1px solid #f47c57;
+  }
 }
 
 /*# sourceMappingURL=style-scss-compiled.css.map */
