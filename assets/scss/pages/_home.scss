@@ -6,6 +6,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 70rem;
+    min-width: 100rem;
     height: 100vh;
     background: linear-gradient(0deg, $color-background-primary 0%, $color-background-primary 40%, $color-background-secondary 100%);
 }
@@ -18,21 +20,59 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-image: url("../../images/bg-pattern-desktop.svg");
+    background-size: cover;
+
+}
+
+h1 {
+    margin-bottom: 3rem;
+    margin-top: 0;
+}
+
+hr {
+    width: 100%;
 }
 
 section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 35rem;
+    height: 80%;
+}
+
+aside {
+    display: grid;
+    margin-left: -12rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
 }
 
 img {
-    position: relative;
-    right: 10rem;
+    grid-area: 1 / 2 / 1 / 2;
     z-index: 1;
+    clip-path: inset(0 0 0 13.5%);
 }
 
 img:last-child {
-    position: absolute;
     z-index: 2;
-    top: 32rem;
-    left: 22rem;
+    position: relative;
+    top: 13.5rem;
+    right: 2.5rem;
 }
+
+summary {
+    display: block;
+}
+
+summary::after {
+    float: right;
+    display: inline-block;
+    content: url(../../icons/icon-arrow-down.svg);
+    transition: 0.2s;
+  }
+  
+  details[open] > summary::after {
+    transform: rotate(180deg);
+  }
